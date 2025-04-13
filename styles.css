@@ -1,0 +1,302 @@
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('download.jfif') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 200px;
+
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    color:#007BFF;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.home {
+    padding: 50px 20px;
+}
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  section.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+.content {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+    
+}
+
+
+.image img {
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+.image img:hover {
+    transform: scale(1.05);
+}
+
+
+.text {
+    max-width: 400px;
+    text-align: center; 
+    color: white;
+    font-size: xx-large;
+    
+}
+
+button {
+    background-color: #007BFF;
+    color: black;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+
+button:hover {
+    background-color: pink;
+    transform: scale(1.05);
+}
+
+
+.about {
+    padding: 2rem;
+    background-color: beige;
+    border-radius:50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    height: 15rem;
+    transition: all 0.3s ease;
+}
+.about:hover{
+    transform: scale(1.05);
+}
+.about .hidden
+{
+    max-width: 400px;
+    text-align: center; 
+    color: black;
+    font-size: xx-large;
+}
+.about h2{
+    font-size: xx-large;
+    font-style: normal;
+    color:black;
+
+}
+.about p{
+    font-size: larger;
+    color:black;
+}
+
+.hidden {
+    display: none;
+ 
+}
+.education {
+    padding: 2rem;
+  background-color: beige;
+  border-radius: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 2rem 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.education:hover{
+    transform: scale(1.05);
+}
+
+.education h2{
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+.education p{
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #555;
+    line-height: 1.6;
+}
+.education .hidden
+{
+    max-width: 400px;
+    text-align: center; 
+    color: black;
+    font-size: small;
+}
+.school {
+    margin-bottom: 1.2rem;
+  }
+  .school strong {
+    font-size: 1.1rem;
+    color: #222;
+  }
+  .school span {
+    font-size: 0.95rem;
+    color: #666666fc;
+  }
+  .skills {
+    padding: 2rem;
+    background-color: beige;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.skills:hover{
+    transform: scale(1.05);
+}
+
+.skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+.skill {
+    margin-bottom: 1.2rem;
+}
+
+.skill strong {
+    font-size: 1.1rem;
+    color: #222;
+}
+
+
+.skills.hidden {
+    max-width: 400px;
+    text-align: center;
+    color: black;
+    font-size: small;
+    display: none; 
+}
+
+
+.contact {
+    padding: 2rem;
+    background-color: beige;
+    border-radius: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    transition: all 0.3s ease;
+  
+}
+.contact:hover{
+    transform: scale(1.05);
+}
+
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: black;
+    
+}
+
+
+.contact .footer_social {
+    margin-top: 20px;
+}
+
+.contact .footer_social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-flex;
+    gap: 20px;
+}
+
+.contact .footer_social ul li a {
+    color: blue;
+    font-size: 28px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .footer_social ul li a:hover {
+    color: black;
+    transform: scale(1.2);
+}
+@media (max-width: 768px) {
+
+    header {
+        padding: 10px 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+    .text {
+        font-size: large;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    button {
+        margin: 5px;
+    }
+}

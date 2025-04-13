@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#education">Educational Background</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        
+    </header>
+
+    <section class="home">
+        <div class="content">
+            <div class="text">
+                <h2>Hello</h2>
+                <p>I'm <strong>Alyssah Brianne Tablate</strong></p>
+                <p>BSIT Student</p>
+                <p>San Pablo City, Laguna</p>
+                <button onclick="showAbout()">About Me</button>
+                <button onclick="showEducation()">Educational Background</button>
+                <button onclick="showSkills()">Skills</button>
+                <button onclick="showContact()">Contact Me</button>
+            </div>
+            <div class="image">
+                <img src="460938775_523540450373262_7056666519217499675_n.jpg" alt="Profile Picture">
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="about" class="about hidden">
+        <h2>About Me</h2>
+        <p>Alyssah Brianne P. Tablate</p>
+        <p>I am 19 years old and from San Pablo City, Laguna. I am currently taking a Bachelor of Science in Information Technology (BSIT) and am now a second-year student majoring in Networking.</p>
+    </section>
+    <section id="education" class="education hidden">
+        <h2>EDUCATIONAL BACKGROUND</h2>
+        <div class="school">
+          <strong>CRECENCIA DRUSILA LOPEZ SENIOR HIGH SCHOOL</strong><br>
+          <span>2021–2023</span>
+        </div>
+        <div class="school">
+          <strong>PAMANTASAN NG LUNGSOD NG SAN PABLO</strong><br>
+          <span>2023–Present</span>
+        </div>
+      </section>
+
+      <section id="skills" class="skills hidden">
+        <h2>Skills</h2>
+        <div class="skill">
+            <strong>COMPUTER LITERACY</strong>
+        </div>
+        <div class="skill">
+            <strong>HAVE PEER TO PEER KNOWLEDGE</strong>
+        </div>
+        <div class="skill">
+            <strong>NETWORKING KNOWLEDGE</strong>
+        </div>
+    </section>
+
+    <section id="contact" class="contact hidden">
+        <h2>Contact Me</h2>
+        <div class="footer_social">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
